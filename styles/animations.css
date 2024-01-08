@@ -67,7 +67,7 @@
   fill: var(--sparks-color);
 }
 
-.contour {
+.like-icon.is-liked .contour {
   fill: var(--text-color);
   transition: fill 0.3s 0.06s;
 }
