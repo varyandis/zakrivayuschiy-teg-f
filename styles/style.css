@@ -197,17 +197,26 @@ h2 {
   transition: box-shadow 0.3s ease;
 }
 
-.card__icon-button:focus {
+/* .card__icon-button:focus {
   border: 2px solid var(--background-color);
   outline: none;
   transition: border 0.3s ease;
+} */
+
+.card__icon-button:focus {
+  outline: none;
 }
 
-.button__animation:focus {
+.card__icon-button:focus-visible {
+  border-color: var(--text-color);
+  transition: border-color 0.3s ease;
+}
+
+/* .button__animation:focus {
   box-shadow: 2px 2px var(--text-color);
   outline: none;
   transition: box-shadow 0.3s ease;
-}
+} */
 
 .button__animation::after {
   content: "";
