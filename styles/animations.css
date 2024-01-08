@@ -67,13 +67,14 @@
   fill: var(--sparks-color);
 }
 
-.like-icon.is-liked .contour {
+/* .contour {
   fill: var(--text-color);
   transition: fill 0.3s 0.06s;
-}
+} */
 
 .like-icon.is-liked .contour {
   fill: var(--sparks-color);
+  transition: fill 0.3s 0.06s;
 }
 
 .like-icon.is-liked .heart {

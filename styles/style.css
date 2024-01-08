@@ -30,11 +30,17 @@
   min-block-size: 100dvb;
   font-variation-settings: "wght" var(--text-weight);
 }
+
 .content {
   display: flex;
   flex-direction: column;
   gap: 54px;
 }
+
+.page:last-child {
+  gap: 54px;
+}
+
 .header {
   /* margin: 102px auto 104px; */
   display: flex;
@@ -239,7 +245,7 @@ h2 {
   gap: 8px;
   width: clamp(19.125rem, 18.496rem + 2.713vw, 20.938rem);
   height: clamp(3.188rem, 5.638rem + -2.723vw, 5rem);
-  margin: 54px auto 105px;
+  /* margin: 54px auto 105px; */
   border: 2px solid var(--text-color);
   font-family: var(--accent-font);
   font-size: 14px;
