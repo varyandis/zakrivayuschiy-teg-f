@@ -1,1 +1,22 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font: "Inter";
+  --accent-font: "PressStart2P";
+  --text-weight: 400;
+  --title-weight: 700;
+  --background-color: #fff;
+  --text-color: #000;
+  --background-image: repeating-linear-gradient(
+      #e7e7e7 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to right, #e7e7e7 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  --size-card: clamp(23.188rem, 16.035rem + 30.516vw, 43.5rem);
+  --size-title: clamp(3.0625rem, 1.921rem + 4.9231vw, 4.0625rem);
+  --size-title-text: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
+  --size-margin-title: clamp(0rem, -8.187rem + 34.93vw, 23.25rem);
+  --size-padding-title-top: clamp(7.5rem, 7.148rem + 1.502vw, 8.5rem);
+  --size-padding-title-right: clamp(0.875rem, -1.469rem + 10vw, 7.531rem);
+  --sparks-color: #ff0000;
+}

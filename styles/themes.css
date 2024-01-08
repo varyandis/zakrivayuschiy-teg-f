@@ -4,3 +4,56 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+  --text-weight: 465;
+  --title-weight: 785;
+  --background-color: #000;
+  --text-color: #00cc14;
+  --background-image: repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(#007f0c 0.01%, #004306);
+}
+
+:root.theme-light {
+  --text-weight: 400;
+  --title-weight: 700;
+  --background-color: #fff;
+  --text-color: #000;
+  --background-image: repeating-linear-gradient(
+      #e7e7e7 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to right, #e7e7e7 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-weight: 400;
+    --title-weight: 700;
+    --background-color: #fff;
+    --text-color: #000;
+    --background-image: repeating-linear-gradient(
+        #e7e7e7 0 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(to right, #e7e7e7 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-weight: 465;
+    --title-weight: 785;
+    --background-color: #000;
+    --text-color: #00cc14;
+    --background-image: repeating-linear-gradient(
+        #000 0 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(to right, #000 0 2px, transparent 2px 4px),
+      repeating-linear-gradient(#007f0c 0.01%, #004306);
+  }
+}
