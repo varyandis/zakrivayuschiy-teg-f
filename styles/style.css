@@ -149,6 +149,7 @@ h1.header__title {
 }
 
 .card_label {
+  position: relative;
   border-top: 2px solid var(--text-color);
   border-bottom: 2px solid var(--text-color);
   aspect-ratio: 1/1;
@@ -301,10 +302,6 @@ h2 {
   width: 21px;
   color: var(--background-color);
   mix-blend-mode: difference;
-}
-
-.card_label {
-  position: relative;
 }
 
 .button__text {
