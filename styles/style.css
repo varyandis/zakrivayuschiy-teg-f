@@ -141,16 +141,14 @@ h1.header__title {
   animation-duration: 0.5s;
 }
 
-
-
 .image {
   width: 100%;
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
   block-size: 100%;
-}
 
+}
 
 .card_label{
 border-top: 2px solid var(--text-color);
@@ -297,7 +295,7 @@ background-color: var(--background-color);
   font-family: var(--accent-font);
   font-size: 14px;
   line-height: 90%;
-  /* background-color: var(--background-color); */
+  background-color: var(--background-color);
   text-wrap: nowrap;
   /* color: var(--text-color); */
   /* transition:color 0.3s ease;  */
@@ -312,12 +310,12 @@ background-color: var(--background-color);
 
 }
 
-
-
 .button_save svg {
   position: relative;
   z-index: 1;
   width: 21px;
+  color: var(--background-color);
+  mix-blend-mode: difference;
 
 }
 
@@ -325,16 +323,22 @@ background-color: var(--background-color);
   position: relative;
 }
 
-.button__text {
-  color: var(--background-color);
-  position: relative;
-  z-index: 1;
-  mix-blend-mode: difference;
-}
 
-.button:hover .button__text {
+.button__text { 
+  color: var(--background-color); 
+  position: relative; 
+  z-index: 1; 
+  mix-blend-mode: difference; 
+ }
+ 
+/* .button:hover .button__text { 
+  mix-blend-mode: difference; 
+  color: var(--background-color); 
+  transition: mix-blend-mode 0.5s linear; 
+  transition: color 0.5s linear; 
+   
+} */
 
-}
 
 
 .label {
