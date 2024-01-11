@@ -29,7 +29,7 @@
 
 .like-icon .core {
   fill: var(--background-color);
-  transition: fill 0.3s 0.05s linear;
+  transition: fill 0.3s 0.03s linear;
 }
 
 .like-icon:hover .core {
@@ -64,7 +64,7 @@
 
 .like-icon.is-liked .core {
   fill: var(--sparks-color);
-  transition: fill 0.3s ease linear;
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
