@@ -217,9 +217,9 @@ h2 {
   transition: border 0.3s ease;
 }
 
-.card__icon-button:focus {
+/* .card__icon-button:focus {
   outline: none;
-}
+} */
 
 .card__icon-button:focus-visible {
   border-color: var(--text-color);
